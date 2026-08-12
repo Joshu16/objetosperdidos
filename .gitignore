@@ -1,0 +1,17 @@
+node_modules/
+.expo/
+dist/
+npm-debug.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+server/node_modules/
+server/uploads/*
+!server/uploads/.gitkeep
+server/.env
+.env
+.env.local

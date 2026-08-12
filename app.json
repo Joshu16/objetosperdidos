@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "ObjetosPerdidos",
+    "slug": "ObjetosPerdidos",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "scheme": "objetosperdidos",
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Necesitamos la camara para fotografiar objetos perdidos.",
+        "NSPhotoLibraryUsageDescription": "Necesitamos acceso a tus fotos para subir objetos perdidos."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#FFFFFF",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "permissions": [
+        "CAMERA",
+        "READ_MEDIA_IMAGES"
+      ],
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Permite seleccionar fotos de objetos perdidos.",
+          "cameraPermission": "Permite tomar fotos de objetos perdidos."
+        }
+      ]
+    ]
+  }
+}
